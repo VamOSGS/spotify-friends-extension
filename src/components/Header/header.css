@@ -1,0 +1,13 @@
+header.app-header {
+  background: #f4f4f4;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.app-header .header-title {
+  font-weight: bold;
+  color: green;
+  margin-left: 10px;
+}
