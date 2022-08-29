@@ -1,12 +1,18 @@
 import React from 'react';
-import Header from 'components/Header';
-function Options() {
+import { SpotifyProvider } from 'contexts/SpotifyContext';
+import { BrowserRouter } from 'react-router-dom';
+import Pages from './pages';
+
+export const RouterProvider = BrowserRouter;
+
+function App() {
   return (
-    <div className='App'>
-      <Header />
-      <div className='App-header'>Options page</div>
-    </div>
+    <RouterProvider>
+      <SpotifyProvider>
+        <Pages />
+      </SpotifyProvider>
+    </RouterProvider>
   );
 }
 
-export default Options;
+export default App;

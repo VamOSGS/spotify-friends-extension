@@ -1,0 +1,11 @@
+.user_info {
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.user_info img {
+  border-radius: 50%;
+  width: 50px;
+  margin-right: 10px;
+}

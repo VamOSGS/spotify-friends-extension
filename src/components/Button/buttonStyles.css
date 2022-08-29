@@ -1,0 +1,22 @@
+.Button {
+  padding: 10px;
+  margin: 4px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  background-color: var(--sp-green);
+
+  color: white;
+  border: none;
+  border-radius: 12px;
+  transition: 0.2s;
+}
+
+.Button .icon {
+  width: 30px;
+  margin-right: 5px;
+}
+
+.Button:hover {
+  background-color: rgb(1, 120, 1);
+}

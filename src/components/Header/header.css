@@ -4,10 +4,15 @@ header.app-header {
   display: flex;
   align-items: center;
   margin-bottom: 5px;
+  justify-content: space-between;
+  padding-right: 20px;
 }
-
+.app-header >div {
+  display: flex;
+  align-items: center;
+}
 .app-header .header-title {
   font-weight: bold;
-  color: green;
+  color: var(--sp-green);
   margin-left: 10px;
 }
