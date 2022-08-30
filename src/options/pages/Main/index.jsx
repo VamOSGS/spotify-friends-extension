@@ -7,7 +7,6 @@ import UserInfo from 'components/UserInfo';
 
 function Options() {
   const { user, logOut } = useSpotify();
-  console.log(user);
   return (
     <div className='App'>
       <Header logOut={logOut} isGuest={user.id === 'guest'} />

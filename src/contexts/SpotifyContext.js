@@ -6,6 +6,7 @@ import { getFriendsActivity } from 'services/friends';
 const SpotifyContext = createContext({});
 
 const LOCAL_TOKEN_KEY = 'sp_token';
+export const getAllCookies = () => document.cookie.split(';').reduce((ac, str) => Object.assign(ac, {[str.split('=')[0].trim()]: str.split('=')[1]}), {});
 
 export const useSpotify = () => useContext(SpotifyContext);
 
@@ -36,7 +37,6 @@ export const SpotifyProvider = ({ children }) => {
     if (token) {
       localStorage.setItem(LOCAL_TOKEN_KEY, token);
     }
-    console.log(localToken);
     if (localToken || token) {
       getUser(localToken || token);
       setAccessToken(localToken || token);
